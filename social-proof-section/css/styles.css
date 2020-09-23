@@ -20,8 +20,8 @@ img {
 	max-width: 100%;
 }
 .main-container {
-	background: url("/images/bg-pattern-top-desktop.svg") left top no-repeat,
-		url("/images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+	background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat,
+		url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
 	padding: 3rem 1.5rem;
 }
 .intro-text {
