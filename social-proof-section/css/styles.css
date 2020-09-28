@@ -19,9 +19,16 @@ html {
 img {
 	max-width: 100%;
 }
+.home-logo {
+	font-size: 2.5rem;
+	color: var(--dark-magenta);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
 .main-container {
-	background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat,
-		url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+	background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat,
+		url("../images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
 	padding: 3rem 1.5rem;
 }
 .intro-text {
@@ -92,6 +99,10 @@ img {
 .attribution a {
 	color: var(--soft-pink);
 }
+.attr-name {
+	display: block;
+	margin-top: 1rem;
+}
 
 @media only screen and (min-width: 760px) {
 	html {
@@ -108,6 +119,17 @@ img {
 }
 
 @media only screen and (min-width: 1000px) {
+	html {
+		font-size: 13px;
+		background: url("../images/bg-pattern-top-desktop.svg") left top no-repeat,
+			url("../images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+	}
+	.home-logo {
+		font-size: 3rem;
+		position: static;
+		width: 100%;
+		padding-left: 2%;
+	}
 	.main-container {
 		display: flex;
 		flex-flow: row wrap;
@@ -115,16 +137,20 @@ img {
 		width: 100%;
 		max-width: 1300px;
 		margin: 0 auto;
+		background: none;
 	}
 	.intro-text {
 		flex-basis: 45%;
 		font-size: 1.3rem;
 		padding-left: 2%;
+		margin: 3rem 0;
 	}
 	.intro-head {
-		margin: 4rem 0 1rem 0;
+		margin: 0;
 		text-align: left;
 		max-width: 70%;
+		font-size: 3rem;
+		margin: 2rem 0;
 	}
 	.intro-desc {
 		margin: 0;
@@ -170,5 +196,8 @@ img {
 	footer {
 		margin-top: 3rem;
 		flex-basis: 100%;
+	}
+	.attr-name {
+		display: inline;
 	}
 }
