@@ -1,3 +1,175 @@
-.attribution {
-	color: violet;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--pale-blue: hsl(243, 100%, 93%);
+	--grayish-blue: hsl(229, 7%, 55%);
+	--dark-blue: hsl(228, 56%, 26%);
+	--very-dark-blue: hsl(229, 57%, 11%);
+}
+html {
+	font-family: "Raleway", sans-serif;
+}
+body {
+	background: url("../images/bg-mobile.png") top left / cover no-repeat;
+	height: 100vh;
+}
+.main-cont {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+}
+.home-logo {
+	font-size: 2.5rem;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 1rem;
+}
+.home-logo > a {
+	color: var(--pale-blue);
+}
+.home-logo > a:hover {
+	color: white;
+}
+.header-cont {
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+	border-top-right-radius: 70px;
+	padding: 2.5rem;
+	flex-basis: 90%;
+	height: max-content;
+	max-width: 400px;
+	margin-bottom: 2rem;
+}
+.icons-cont {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top: 2rem;
+}
+.icon-box {
+	background-color: var(--very-dark-blue);
+	border-radius: 10px;
+	padding: 0.6rem;
+	margin-right: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+}
+.info-cont {
+	background-color: var(--dark-blue);
+	border-radius: 10px;
+	padding: 2rem 2.5rem 3rem 2.5rem;
+	flex-basis: 90%;
+	max-width: 400px;
+	text-align: center;
+	color: var(--pale-blue);
+	position: relative;
+}
+.info-text {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+}
+.progress-bar {
+	text-align: left;
+	background-color: var(--very-dark-blue);
+	width: 100%;
+	border-radius: 50px;
+	height: 16px;
+	padding: 2px;
+}
+.progress-percent {
+	border-radius: 50px;
+	width: 81.5%;
+	height: 12px;
+	background: linear-gradient(
+		90deg,
+		hsl(6, 100%, 80%) 30%,
+		hsl(335, 100%, 65%) 100%
+	);
+}
+.progress-percent::after {
+	content: " ";
+	background: white;
+	border-radius: 50%;
+	display: inline-block;
+	height: 11px;
+	width: 11px;
+	position: relative;
+	left: 96%;
+	top: -3px;
+}
+.prog-labels {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 800;
+	margin-top: 0.5rem;
+}
+.remain-percent {
+	position: absolute;
+	font-size: 0.8rem;
+	left: 25%;
+	bottom: -35px;
+	background-color: var(--pale-blue);
+	padding: 1rem;
+	color: var(--very-dark-blue);
+	border-radius: 10px;
+	width: 50%;
+}
+.num-emp {
+	font-size: 2rem;
+	font-weight: 800;
+}
+@media only screen and (min-width: 760px) {
+	html {
+		font-size: 14px;
+	}
+	body {
+		background: var(--very-dark-blue) url("../images/bg-desktop.png") no-repeat
+			bottom left;
+		background-position-y: 160%;
+	}
+	.main-cont {
+		justify-content: center;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.header-cont {
+		flex-basis: 45%;
+		margin-bottom: 0;
+		max-width: 300px;
+		margin-right: 2rem;
+	}
+	.info-cont {
+		flex-basis: 45%;
+		max-width: 600px;
+		padding: 2.2rem 3rem;
+		align-self: end;
+	}
+	.info-text {
+		text-align: left;
+	}
+	.remain-percent {
+		font-size: 0.8rem;
+		left: unset;
+		bottom: unset;
+		width: 30%;
+		right: 3rem;
+		top: -2rem;
+	}
+	.remain-percent::after {
+		content: "";
+		border-top: 30px solid var(--pale-blue);
+		border-left: 30px solid transparent;
+		position: relative;
+		top: 50px;
+		right: -19px;
+		font-size: 10px;
+	}
 }

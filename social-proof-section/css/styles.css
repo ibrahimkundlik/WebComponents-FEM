@@ -21,10 +21,12 @@ img {
 }
 .home-logo {
 	font-size: 2.5rem;
+}
+.home-logo > a {
 	color: var(--dark-magenta);
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
+}
+.home-logo > a:hover {
+	color: var(--soft-pink);
 }
 .main-container {
 	background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat,
@@ -126,8 +128,7 @@ img {
 	}
 	.home-logo {
 		font-size: 3rem;
-		position: static;
-		width: 100%;
+		flex-basis: 100%;
 		padding-left: 2%;
 	}
 	.main-container {
