@@ -36,6 +36,9 @@ body {
 .home-logo > a:hover {
 	color: white;
 }
+.home-page-link {
+	display: none;
+}
 .header-cont {
 	background-color: var(--dark-blue);
 	border-radius: 10px;
@@ -132,7 +135,8 @@ body {
 	}
 	body {
 		background: var(--very-dark-blue) url("../images/bg-desktop.png") no-repeat
-			bottom left;
+			bottom right;
+		background-size: cover;
 		background-position-y: 160%;
 	}
 	.main-cont {

@@ -30,6 +30,9 @@ html {
 	text-align: center;
 	font-size: 2rem;
 }
+.home-page-link {
+	display: none;
+}
 .header-cont {
 	text-align: center;
 	font-size: 0.8rem;

@@ -28,6 +28,9 @@ img {
 .home-logo > a:hover {
 	color: var(--soft-pink);
 }
+.home-page-link {
+	display: none;
+}
 .main-container {
 	background: url("../images/bg-pattern-top-mobile.svg") left top no-repeat,
 		url("../images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
