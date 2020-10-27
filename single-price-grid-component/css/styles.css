@@ -13,3 +13,105 @@ html {
 	font-family: "Karla", sans-serif;
 	font-size: 16px;
 }
+li {
+	list-style: none;
+}
+a {
+	color: var(--cyan);
+}
+a:hover {
+	color: var(--bright-yellow);
+}
+.home-logo {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.home-page-link {
+	display: none;
+}
+.main-container {
+	padding: 2rem 2rem 4rem 2rem;
+	background-color: var(--light-gray);
+}
+.price-grid-cont {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 400px;
+	margin: 0 auto;
+}
+.join-section,
+.subscribe-section,
+.why-us-section {
+	flex-basis: 100%;
+	padding: 1.5rem;
+}
+.join-section {
+	background-color: white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.subscribe-section {
+	background-color: var(--cyan);
+	color: white;
+}
+.why-us-section {
+	background-color: hsl(179, 59%, 58%);
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	color: var(--light-gray);
+}
+.join-header1 {
+	font-size: 1.3rem;
+	color: var(--cyan);
+}
+.join-header2 {
+	font-size: 1rem;
+	padding: 1.5rem 0;
+	color: var(--bright-yellow);
+}
+.join-text {
+	color: var(--grayish-blue);
+	line-height: 1.8;
+	font-size: 0.8rem;
+}
+.subscribe-header {
+	font-size: 1.2rem;
+}
+.subscribe-pricing {
+	align-items: center;
+	padding-top: 1rem;
+	color: var(--light-gray);
+	padding-bottom: 0.4rem;
+}
+.pricing {
+	font-size: 2.5rem;
+	color: white;
+}
+.subscribe-button {
+	width: 100%;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-top: 2rem;
+	background-color: var(--bright-yellow);
+	font-weight: 500;
+	font-size: 1.1rem;
+	color: white;
+	cursor: pointer;
+}
+.subscribe-button:hover {
+	background-color: hsla(71, 73%, 54%, 0.829);
+}
+.why-us-header {
+	color: white;
+}
+.why-us-list-cont {
+	margin-top: 1.5rem;
+}
+.list-text {
+	margin: 0.2rem 0;
+}
