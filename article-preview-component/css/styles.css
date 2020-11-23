@@ -1,3 +1,52 @@
-h1 {
-	color: violet;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+	--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+	--Grayish-Blue: hsl(212, 23%, 69%);
+	--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+html {
+	font-family: "Manrope", sans-serif;
+	font-size: 13px;
+}
+body {
+	background-color: var(--Light-Grayish-Blue);
+}
+img {
+	max-width: 100%;
+}
+.home-logo {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+.home-page-link {
+	display: none;
+}
+.main-cont {
+	width: 88%;
+	margin: 2rem auto;
+	border-radius: 10px;
+	background-color: white;
+}
+.furniture-image {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.article-head,
+.article-text,
+.avatar-cont {
+	margin: 0 2rem;
+}
+.article-head {
+	margin-top: 2.5rem;
+}
+.article-text {
+	margin-top: 1rem;
+	line-height: 1.5;
 }
