@@ -26,7 +26,7 @@ img {
 	color: var(--dark-magenta);
 }
 .home-logo > a:hover {
-	color: var(--soft-pink);
+	color: #ef9546;
 }
 .home-page-link {
 	display: none;

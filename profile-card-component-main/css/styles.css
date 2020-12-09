@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--Dark-grayish-blue: hsl(227, 10%, 46%);
+	--Dark-gray: hsl(0, 0%, 59%);
+}
+a {
+	color: var(--Very-dark-desaturated-blue);
+}
+a:hover {
+	color: var(--Dark-cyan);
+}
+html {
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 18px;
+}
+img {
+	width: 100%;
+}
+.home-logo {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem 0;
+}
+.home-page-link {
+	display: none;
+}

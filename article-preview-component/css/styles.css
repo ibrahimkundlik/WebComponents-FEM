@@ -24,10 +24,13 @@ img {
 .home-logo {
 	width: 100%;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	margin: 2rem 0;
 }
 a {
+	color: var(--Very-Dark-Grayish-Blue);
+}
+a:hover {
 	color: #43776e;
 }
 .home-page-link {
