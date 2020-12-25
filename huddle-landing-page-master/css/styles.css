@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--violet: hsl(257, 40%, 49%);
+}
+a {
+	color: #fff;
+}
+img {
+	width: 100%;
+	display: block;
+}
+html {
+	font-family: "Poppins", sans-serif;
+}
+body {
+	background-image: url("../images/bg-mobile.svg");
+	background-color: var(--violet);
+	background-repeat: no-repeat;
+	background-size: contain;
+	color: #fff;
+}
+.main-container {
+	padding: 0 1.5rem;
+	max-width: 600px;
+	margin: 0 auto;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 1.5rem 0 3rem 0;
+}
+.logo-container {
+	flex-basis: 35%;
+	max-width: 150px;
+}
+.home-logo {
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+.head-img {
+	padding: 0 1rem;
+}
+.head-desc {
+	text-align: center;
+	margin: 3rem 0;
+}
+.head-desc h3 {
+	max-width: 20ch;
+	font-weight: 600;
+	margin: 0 auto 1rem auto;
+}
+.reg-btn {
+	border: none;
+	background-color: #fff;
+	color: var(--violet);
+	width: 60%;
+	border-radius: 1.5rem;
+	padding: 0.5rem 0;
+	margin: 1.5rem 0 0 0;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+}
+.links-cont {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+.links-cont i {
+	border: 1px solid white;
+	padding: 2px;
+	margin: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.links-cont i:hover,
+.reg-btn:hover {
+	background-color: #00a9fa;
+	color: #000;
+}
+a:hover {
+	color: #00a9fa;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+	body {
+		background-image: url("../images/bg-desktop.svg");
+		background-size: cover;
+	}
+	.main-container {
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+	.home-logo {
+		font-size: 2rem;
+		margin-right: 4rem;
+	}
+	.head-section {
+		display: flex;
+		align-content: center;
+	}
+	.head-img,
+	.head-desc {
+		width: 100%;
+	}
+	.head-img {
+		display: flex;
+		align-items: center;
+	}
+	.head-desc {
+		text-align: left;
+		padding-left: 2rem;
+		padding-right: 1rem;
+	}
+	.reg-btn {
+		margin: 0;
+		width: 40%;
+		padding: 0.8rem 0;
+	}
+	.head-desc h3 {
+		margin: 0;
+		font-size: 1.7rem;
+	}
+	.head-desc p {
+		margin: 1rem 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		background-size: cover;
+	}
+	.links-cont {
+		justify-content: flex-end;
+		margin-top: 1rem;
+		padding-right: 2rem;
+	}
+}
