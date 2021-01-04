@@ -22,16 +22,16 @@ a:hover {
 html {
 	font-family: "Poppins", sans-serif;
 	font-size: 15px;
-	background-color: #f9f9f9;
+	background-color: #fbfbfb;
 }
 .main-container {
 	max-width: 550px;
 	margin: 0 auto;
-	padding: 1rem;
+	padding: 2rem 1rem;
 }
 .home-logo {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 .home-page-link {
 	display: none;
@@ -39,7 +39,7 @@ html {
 .header-cont {
 	text-align: center;
 	font-size: 0.8rem;
-	margin: 4rem 0 3rem 0;
+	margin: 2rem 0 3rem 0;
 	color: var(--very-dark-blue);
 }
 .header-main {
@@ -49,7 +49,7 @@ html {
 .header-para {
 	font-size: 1rem;
 	line-height: 1.6;
-	margin: 1.5rem auto;
+	margin: 0.5rem auto;
 	color: var(--grayish-blue);
 }
 .cards-list {
@@ -131,11 +131,14 @@ html {
 	html {
 		font-size: 18px;
 	}
+	.home-logo {
+		font-size: 2rem;
+	}
 	.main-container {
 		max-width: 1150px;
 	}
 	.header-cont {
-		margin: 2.5rem 0;
+		margin: 1rem 0;
 	}
 	.header-para {
 		width: 50%;

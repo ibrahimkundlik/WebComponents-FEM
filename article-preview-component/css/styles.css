@@ -115,6 +115,7 @@ a:hover {
 	width: 20%;
 	display: inline-block;
 	margin: 0 0.5rem;
+	cursor: pointer;
 }
 .avatar-img-cont img {
 	border-radius: 50%;
@@ -137,12 +138,17 @@ a:hover {
 }
 .share-img-cont {
 	background-color: var(--Grayish-Blue);
-	padding: 0.4rem;
 	border-radius: 100%;
 	text-align: center;
 	cursor: pointer;
 	position: absolute;
 	right: 3rem;
+	padding: 0.6rem;
+	width: 30px;
+	height: 30px;
+}
+.share-img-cont img {
+	display: block;
 }
 
 @media only screen and (min-width: 600px) {
@@ -191,9 +197,6 @@ a:hover {
 		position: absolute;
 		bottom: -30%;
 		left: 45%;
-	}
-	.share-img-cont {
-		padding: 0.6rem;
 	}
 	.share-img-cont:hover {
 		background-color: var(--Very-Dark-Grayish-Blue);
