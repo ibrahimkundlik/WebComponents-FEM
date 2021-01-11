@@ -1,0 +1,26 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--Desaturated-Red: hsl(0, 36%, 70%);
+	--Soft-Red: hsl(0, 93%, 68%);
+	--Dark-Grayish-Red: hsl(0, 6%, 24%);
+	/* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+  - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+}
+a {
+	color: var(--Soft-Red);
+}
+a:hover {
+	color: var(--Dark-Grayish-Red);
+}
+img {
+	width: 100%;
+	display: block;
+}
+html {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 16px;
+}
