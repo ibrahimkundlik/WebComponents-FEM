@@ -8,7 +8,7 @@
 	--Soft-Red: hsl(0, 93%, 68%);
 	--Dark-Grayish-Red: hsl(0, 6%, 24%);
 	/* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-  - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+	- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
 }
 a {
 	color: var(--Soft-Red);
@@ -23,4 +23,20 @@ img {
 html {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 16px;
+}
+.main-container {
+	background-image: url("../images/bg-pattern-desktop.svg");
+}
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+}
+.company-logo {
+	width: 40%;
+}
+.home-logo {
+	font-size: 1.8rem;
 }
