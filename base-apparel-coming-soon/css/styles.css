@@ -7,8 +7,6 @@
 	--Desaturated-Red: hsl(0, 36%, 70%);
 	--Soft-Red: hsl(0, 93%, 68%);
 	--Dark-Grayish-Red: hsl(0, 6%, 24%);
-	/* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-	- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
 }
 a {
 	color: var(--Soft-Red);
@@ -24,8 +22,14 @@ html {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 16px;
 }
-.main-container {
+body {
 	background-image: url("../images/bg-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-container {
+	max-width: 400px;
+	margin: 0 auto;
 }
 header {
 	display: flex;
@@ -38,5 +42,67 @@ header {
 	width: 40%;
 }
 .home-logo {
-	font-size: 1.8rem;
+	font-size: 1.9rem;
+}
+.company-desc {
+	padding: 3rem 2rem;
+	text-align: center;
+}
+.company-desc h1 {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-bottom: 1rem;
+	color: var(--Dark-Grayish-Red);
+}
+.company-desc h1 span {
+	display: block;
+	font-weight: 300;
+	color: var(--Desaturated-Red);
+}
+.company-desc p {
+	font-size: 0.9rem;
+	color: var(--Desaturated-Red);
+	font-weight: 400;
+	line-height: 1.4;
+}
+form {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1.5rem 0;
+	position: relative;
+}
+#email {
+	width: 100%;
+	border: 1px solid var(--Desaturated-Red);
+	outline: none;
+	border-radius: 3rem;
+	padding: 0.6rem 0.8rem;
+	font-family: "Josefin Sans", sans-serif;
+	color: var(--Desaturated-Red);
+}
+.error-img {
+	position: absolute;
+	right: 65px;
+}
+form button {
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 0.52rem 1.4rem;
+	border-radius: 20px;
+	box-shadow: 0px 8px 8px rgba(165, 165, 165, 0.301);
+	background: rgb(248, 191, 191);
+	background: linear-gradient(
+		135deg,
+		rgba(248, 191, 191, 1) 0%,
+		rgba(238, 140, 140, 1) 135%
+	);
+}
+form button:hover {
+	background: rgb(248, 191, 191);
 }
