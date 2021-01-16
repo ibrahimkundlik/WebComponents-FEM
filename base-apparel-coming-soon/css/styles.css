@@ -64,7 +64,7 @@ header {
 	font-weight: 300;
 	color: var(--Desaturated-Red);
 }
-.company-desc p {
+.company-info {
 	font-size: 0.9rem;
 	color: var(--Desaturated-Red);
 	font-weight: 400;
@@ -75,7 +75,7 @@ form {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	margin: 1.5rem 0;
+	margin: 1.5rem 0 0.5rem 0;
 	position: relative;
 }
 #email {
@@ -87,9 +87,17 @@ form {
 	font-family: "Josefin Sans", sans-serif;
 	color: var(--Desaturated-Red);
 }
+#email:focus {
+	box-shadow: 0 0 10px var(--Desaturated-Red);
+}
 .error-img {
 	position: absolute;
 	right: 65px;
+	transform: translateX(48px);
+	transition: all ease-out 0.3s;
+}
+.error-img-trns {
+	transform: translateX(0px);
 }
 form button {
 	position: absolute;
@@ -109,6 +117,12 @@ form button {
 }
 form button:hover {
 	background: rgb(248, 191, 191);
+}
+.error-mssg {
+	display: none;
+	padding-left: 0.8rem;
+	font-size: 0.7rem;
+	color: #f96464;
 }
 @media screen and (min-width: 768px) {
 	body {
