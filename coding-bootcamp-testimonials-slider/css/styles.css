@@ -1,0 +1,71 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--dark-blue: hsl(240, 38%, 20%);
+	--grayish-blue: hsl(240, 18%, 77%);
+}
+html {
+	font-family: "Inter", sans-serif;
+	font-size: 32px;
+}
+img {
+	width: 100%;
+	display: block;
+}
+.img-cont {
+	background: url("../images/pattern-bg.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 1.5rem 1rem;
+	position: relative;
+}
+.img-cont img {
+	width: 80%;
+	border-radius: 5px;
+	margin: 0 auto;
+	box-shadow: 0 1rem 1rem -0.8rem rgb(85, 85, 85);
+}
+.controls {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: -17px;
+	left: calc(50% - 38px);
+	background-color: white;
+	border-radius: 30px;
+}
+button {
+	border: none;
+	background: none;
+	outline: none;
+}
+.previous {
+	padding: 10px 20px 10px 10px;
+	cursor: pointer;
+}
+.next {
+	padding: 10px 10px 10px 20px;
+	cursor: pointer;
+}
+.previous:disabled {
+	cursor: not-allowed;
+}
+.next:disabled {
+	cursor: not-allowed;
+}
+.desc-cont {
+	background: url("../images/pattern-quotes.svg"),
+		url("../images/pattern-curve.svg");
+	background-repeat: no-repeat;
+	background-position: top center, bottom left;
+	/* background-size: 10%, 50%; */
+	text-align: center;
+	font-size: 0.6rem;
+	font-weight: 300;
+	padding: 1rem;
+}
