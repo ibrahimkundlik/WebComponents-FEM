@@ -15,14 +15,23 @@ img {
 	width: 100%;
 	display: block;
 }
+.home-logo {
+	text-align: center;
+	margin-top: 1rem;
+}
+.main-cont {
+	max-width: 400px;
+	margin: 0 auto;
+}
 .img-cont {
 	background: url("../images/pattern-bg.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 1.5rem 1rem;
+	margin: 1rem 1rem;
 	position: relative;
+	padding: 0.8rem 0 0.6rem 0;
 }
-.img-cont img {
+.profile-img {
 	width: 80%;
 	border-radius: 5px;
 	margin: 0 auto;
@@ -34,7 +43,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	bottom: -17px;
+	bottom: 4px;
 	left: calc(50% - 38px);
 	background-color: white;
 	border-radius: 30px;
@@ -54,18 +63,51 @@ button {
 }
 .previous:disabled {
 	cursor: not-allowed;
+	opacity: 0.3;
 }
 .next:disabled {
 	cursor: not-allowed;
+	opacity: 0.3;
 }
 .desc-cont {
 	background: url("../images/pattern-quotes.svg"),
 		url("../images/pattern-curve.svg");
 	background-repeat: no-repeat;
 	background-position: top center, bottom left;
-	/* background-size: 10%, 50%; */
+	background-size: 2rem, 8rem;
 	text-align: center;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	font-weight: 300;
-	padding: 1rem;
+	padding: 1rem 1.6rem 2.2rem 1.6rem;
+	color: var(--dark-blue);
+}
+.profile-name {
+	font-weight: 700;
+	margin-top: 0.5rem;
+}
+.profile-post {
+	font-size: 0.4rem;
+	margin-top: 3px;
+	color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 768px) {
+	.main-cont {
+		max-width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-cont {
+		width: 35%;
+		order: 2;
+	}
+	.desc-cont {
+		max-width: 50%;
+		order: 1;
+	}
+	.profile-img {
+		opacity: 0.2;
+	}
 }
