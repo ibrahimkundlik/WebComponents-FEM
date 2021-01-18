@@ -19,15 +19,18 @@ img {
 	text-align: center;
 	margin-top: 1rem;
 }
-.main-cont {
-	max-width: 400px;
-	margin: 0 auto;
+.home-logo a {
+	color: #8265d3;
+}
+.home-logo a:hover {
+	color: #d3629d;
 }
 .img-cont {
+	max-width: 400px;
 	background: url("../images/pattern-bg.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 1rem 1rem;
+	margin: 1rem auto;
 	position: relative;
 	padding: 0.8rem 0 0.6rem 0;
 }
@@ -85,6 +88,10 @@ button {
 	font-weight: 700;
 	margin-top: 0.5rem;
 }
+.profile-review {
+	max-width: 450px;
+	margin: 0 auto;
+}
 .profile-post {
 	font-size: 0.4rem;
 	margin-top: 3px;
@@ -93,21 +100,30 @@ button {
 
 @media screen and (min-width: 768px) {
 	.main-cont {
-		max-width: 100%;
+		width: 100%;
+		height: calc(100vh - 2rem - 39px);
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: center;
-		align-items: center;
+		justify-content: space-between;
+		align-items: stretch;
+		margin-top: 1rem;
+
+		outline: 1px solid green;
 	}
 	.img-cont {
-		width: 35%;
 		order: 2;
+		max-width: 500px;
+		margin: 0;
+		padding: 1.5rem 1rem 0.6rem 1rem;
+
+		outline: 1px solid rebeccapurple;
 	}
 	.desc-cont {
-		max-width: 50%;
 		order: 1;
 	}
 	.profile-img {
+		width: 90%;
+		margin: 0;
 		opacity: 0.2;
 	}
 }
