@@ -152,7 +152,7 @@ form button:hover {
 	.hero-img {
 		grid-area: hero-img;
 		background-image: url("../images/hero-desktop.jpg");
-		height: 80vh;
+		height: 100%;
 	}
 	.company-desc {
 		grid-area: company-desc;
