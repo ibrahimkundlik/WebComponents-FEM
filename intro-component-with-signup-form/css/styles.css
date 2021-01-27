@@ -36,6 +36,113 @@ body {
 }
 .main-container {
 	max-width: 500px;
-	padding: 2rem 1rem;
+	padding: 2rem 1.5rem 4rem 1.5rem;
 	margin: 0 auto;
+}
+.desc-cont {
+	text-align: center;
+}
+.desc-cont p {
+	margin: 1.5rem 0 3rem 0;
+}
+.trial-btn {
+	outline: none;
+	border: none;
+	background-color: var(--Blue);
+	color: white;
+	cursor: pointer;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	padding: 1.5rem;
+	border-radius: 0.8rem;
+	box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1.8rem;
+}
+.bold {
+	font-weight: 700;
+}
+.new-line {
+	display: block;
+}
+.trial-btn:hover {
+	background-color: #4939b1;
+}
+.info-form {
+	background-color: white;
+	border-radius: 0.8rem;
+	padding: 1.5rem;
+}
+input {
+	outline: none;
+	border: 1px solid gray;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: var(--Dark-Blue);
+	font-weight: 700;
+	padding: 1rem;
+	border-radius: 0.3rem;
+}
+input::placeholder {
+	color: var(--Dark-Blue);
+}
+.submit-btn {
+	outline: none;
+	border: none;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: white;
+	background-color: var(--Green);
+	text-transform: uppercase;
+	padding: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 0.3rem;
+	box-shadow: 0 5px 0 #31af79;
+}
+.submit-btn:hover {
+	background-color: #3cd694;
+}
+.terms-services {
+	color: var(--Grayish-Blue);
+	font-size: 0.7rem;
+	text-align: center;
+	line-height: 1.8;
+	margin: 1.2rem 0.8rem 0 0.8rem;
+}
+.service-link {
+	font-weight: 700;
+	color: var(--Red);
+	cursor: pointer;
+}
+.service-link:hover {
+	color: var(--Green);
+}
+.info-form div {
+	position: relative;
+}
+.error-icon {
+	position: absolute;
+	width: 1.5rem;
+	right: 5%;
+	top: 20%;
+	opacity: 0;
+	transform: translateX(1000px);
+}
+.error {
+	color: var(--Red);
+	font-style: italic;
+	font-size: 0.7rem;
+	margin-top: 0.4rem;
+	margin-bottom: 1rem;
+	text-align: right;
+	opacity: 0;
+	transform: translateX(1000px);
+}
+.error-show {
+	opacity: 1;
+	transform: translateX(0px);
+	transition: all ease-in-out 0.5s;
 }

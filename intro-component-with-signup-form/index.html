@@ -40,15 +40,47 @@
 						<span class="bold">Try it free 7 days</span> then
 						<span class="new-line">$20/mo. thereafter</span>
 					</button>
-					<form>
-						<input type="text" name="firstName" placeholder="First Name" />
-						<input type="text" name="lastName" placeholder="Last Name" />
-						<input type="email" name="email" placeholder="Email Address" />
-						<input type="password" name="password" placeholder="Password" />
+					<form class="info-form">
+						<div>
+							<input type="text" name="firstName" placeholder="First Name" />
+							<p class="error">First Name cannot be empty</p>
+							<img
+								src="./images/icon-error.svg"
+								alt="error icon"
+								class="error-icon"
+							/>
+						</div>
+						<div>
+							<input type="text" name="lastName" placeholder="Last Name" />
+							<p class="error">Last Name cannot be empty</p>
+							<img
+								src="./images/icon-error.svg"
+								alt="error icon"
+								class="error-icon"
+							/>
+						</div>
+						<div>
+							<input type="email" name="email" placeholder="Email Address" />
+							<p class="error">Looks like this is not an email</p>
+							<img
+								src="./images/icon-error.svg"
+								alt="error icon"
+								class="error-icon"
+							/>
+						</div>
+						<div>
+							<input type="password" name="password" placeholder="Password" />
+							<p class="error">Password cannot be empty</p>
+							<img
+								src="./images/icon-error.svg"
+								alt="error icon"
+								class="error-icon"
+							/>
+						</div>
 						<button type="submit" class="submit-btn">
 							Claim your free trial
 						</button>
-						<p>
+						<p class="terms-services">
 							By clicking the button, you are agreeing to our
 							<span class="service-link">Terms and Services</span>
 						</p>
@@ -56,5 +88,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
