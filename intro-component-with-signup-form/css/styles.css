@@ -127,7 +127,7 @@ input::placeholder {
 	position: absolute;
 	width: 1.5rem;
 	right: 5%;
-	top: 20%;
+	top: 13%;
 	opacity: 0;
 	transform: translateX(1000px);
 }
@@ -135,8 +135,6 @@ input::placeholder {
 	color: var(--Red);
 	font-style: italic;
 	font-size: 0.7rem;
-	margin-top: 0.4rem;
-	margin-bottom: 1rem;
 	text-align: right;
 	opacity: 0;
 	transform: translateX(1000px);
@@ -145,6 +143,8 @@ input::placeholder {
 	opacity: 1;
 	transform: translateX(0px);
 	transition: all ease-in-out 0.3s;
+	margin-top: 0.4rem;
+	margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -153,8 +153,15 @@ input::placeholder {
 		background-color: var(--Red);
 	}
 	.main-container {
-		width: 90%;
+		width: 95%;
 		max-width: 1200px;
+		position: relative;
+		padding: 3rem 1.5rem;
+	}
+	.home-logo {
+		position: absolute;
+		top: 6%;
+		left: 5%;
 	}
 	.hero-section {
 		display: flex;
@@ -163,11 +170,15 @@ input::placeholder {
 		align-items: center;
 	}
 	.desc-cont {
-		flex-basis: 40%;
+		flex-basis: 45%;
 		text-align: left;
 	}
+	.desc-cont h1 {
+		font-size: 3rem;
+		margin-top: 3rem;
+	}
 	.form-cont {
-		flex-basis: 40%;
+		flex-basis: 45%;
 	}
 	.new-line {
 		display: inline;
