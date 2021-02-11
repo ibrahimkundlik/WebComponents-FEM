@@ -11,7 +11,119 @@
 	--Light-gray: hsl(0, 0%, 81%);
 	--Light-grayish-blue: hsl(210, 46%, 95%);
 }
+li {
+	list-style: none;
+}
+img {
+	width: 100%;
+}
 html {
 	font-family: "Barlow Semi Condensed", sans-serif;
 	font-size: 13px;
+}
+body {
+	background-color: var(--Light-grayish-blue);
+}
+.home-logo {
+	font-size: 2rem;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+.home-logo a {
+	color: var(--Very-dark-grayish-blue);
+}
+.home-logo a:hover {
+	color: var(--Very-dark-blackish-blue);
+}
+.main-container {
+	max-width: 450px;
+	margin: 0 auto 6rem auto;
+}
+.profile-container {
+	border-radius: 0.6rem;
+	margin: 1.6rem;
+	padding: 1.8rem;
+	display: flex;
+	flex-flow: row wrap;
+	color: var(--Light-grayish-blue);
+}
+.profile-img img {
+	border-radius: 50%;
+	display: block;
+	border: 2px solid hsla(217, 19%, 35%, 0.5);
+}
+.profile-img {
+	flex-basis: 15%;
+	max-width: 44px;
+}
+.profile-info {
+	flex-basis: 80%;
+	margin-left: 1rem;
+	margin-top: 1.2%;
+	display: flex;
+	flex-flow: column nowrap;
+}
+.profile-container:nth-child(1) {
+	background-color: var(--Moderate-violet);
+	background-image: url("../images/bg-pattern-quotation.svg");
+	background-repeat: no-repeat;
+	background-position-x: 90%;
+}
+.profile-container:nth-child(2) {
+	background: var(--Very-dark-grayish-blue);
+}
+.profile-container:nth-child(4) {
+	background: var(--Very-dark-blackish-blue);
+}
+.profile-container:nth-child(3),
+.profile-container:nth-child(5) {
+	background: var(--White);
+	color: var(--Very-dark-grayish-blue);
+}
+.profile-name {
+	font-size: 1.5rem;
+}
+.profile-post {
+	opacity: 0.5;
+}
+.review1 {
+	margin: 1.4rem 0;
+	font-size: 1.69rem;
+}
+.review2 {
+	line-height: 1.5;
+	font-size: 1.1rem;
+	margin-bottom: 1.2rem;
+	opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+	.main-container {
+		max-width: 900px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.profile-container {
+		flex-basis: 44%;
+	}
+	.profile-container:nth-child(1) {
+		order: 1;
+	}
+	.profile-container:nth-child(2) {
+		order: 3;
+	}
+	.profile-container:nth-child(3) {
+		order: 4;
+	}
+	.profile-container:nth-child(4) {
+		order: 2;
+	}
+	.profile-container:nth-child(5) {
+		order: 5;
+		flex-basis: 93%;
+	}
+	.profile-info {
+		margin-top: 0;
+	}
 }
