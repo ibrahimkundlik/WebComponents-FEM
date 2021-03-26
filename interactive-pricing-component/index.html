@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Interactive pricing component | FEM</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="main-cont">
+			<header class="header">
+				<a class="home-logo" href="../index.html"><i class="fa fa-home"></i></a>
+				<h1>Simple, traffic-based pricing</h1>
+				<p>
+					Sign-up for our 30-day trial. <span>No credit card required.</span>
+				</p>
+			</header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+			<div class="pricing-cont">
+				<p class="pageview">100K Pageviews</p>
+				<div class="range-cont">
+					<input
+						type="range"
+						id="price-range"
+						name="priceRange"
+						min="10"
+						max="100"
+						value="50"
+						class="slider"
+					/>
+				</div>
+				<p class="pricing">
+					$16.00 <span class="pricing-duration">/ month</span>
+				</p>
+				<div class="duration-toggle">
+					<p>Monthly Billing</p>
+					<div class="checkbox-cont">
+						<input type="checkbox" name="duration" id="duration" />
+						<label for="duration">DUR</label>
+					</div>
+					<p>Yearly Billing</p>
+					<p class="discount">25% discount</p>
+				</div>
+				<ul class="features">
+					<li class="feature">Unlimited websites</li>
+					<li class="feature">100% data ownership</li>
+					<li class="feature">Email reports</li>
+				</ul>
+				<button class="start-trial">Start my trial</button>
+			</div>
+		</section>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
