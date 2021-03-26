@@ -90,6 +90,7 @@ form button {
 	box-shadow: 0 5px 10px rgb(206, 206, 206);
 	order: 3;
 	margin-top: 0.6rem;
+	outline: none;
 }
 form button:hover,
 .links-cont i:hover {

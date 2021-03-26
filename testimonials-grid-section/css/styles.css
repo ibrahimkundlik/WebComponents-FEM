@@ -26,9 +26,9 @@ body {
 	color: var(--White);
 }
 .home-logo {
-	font-size: 2rem;
+	font-size: 2.8rem;
 	text-align: center;
-	margin: 1.5rem 0;
+	margin: 2rem 0;
 }
 .home-logo a {
 	color: var(--Very-dark-blackish-blue);
@@ -135,7 +135,7 @@ body {
 @media screen and (min-width: 1200px) {
 	.home-logo {
 		font-size: 2.5rem;
-		margin: 1rem 0;
+		margin: 2rem 0;
 	}
 	body {
 		display: flex;

@@ -39,6 +39,7 @@ body {
 	max-width: 480px;
 	padding: 2rem 1.5rem 4rem 1.5rem;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .desc-cont {
 	text-align: center;
@@ -85,7 +86,7 @@ input {
 	border-radius: 0.3rem;
 }
 input::placeholder {
-	color: var(--Dark-Blue);
+	color: var(--Grayish-Blue);
 }
 .submit-btn {
 	outline: none;
