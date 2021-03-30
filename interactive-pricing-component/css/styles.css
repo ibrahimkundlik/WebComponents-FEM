@@ -25,3 +25,11 @@ body {
 .home-logo:hover {
 	color: green;
 }
+
+.duration-toggle {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}

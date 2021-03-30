@@ -1,1 +1,1 @@
-console.log("added");
+console.log("Main Script");
