@@ -12,7 +12,7 @@ input[type="range"] {
 	width: 280px;
 	outline: none;
 	transition: background 450ms ease-in;
-	margin: 2rem 0;
+	margin: 2.5rem 0;
 	cursor: pointer;
 	-webkit-appearance: none;
 }
@@ -50,6 +50,6 @@ input[type="range"]::-moz-range-thumb:hover {
 
 @media only screen and (min-width: 768px) {
 	input[type="range"] {
-		width: 450px;
+		width: 280px;
 	}
 }

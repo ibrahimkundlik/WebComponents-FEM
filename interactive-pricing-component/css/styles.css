@@ -3,27 +3,96 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+:root {
+	--Grayish-Blue: hsl(225, 20%, 60%);
+	--Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+}
+
 img {
 	width: 100%;
 	display: block;
 }
+
 li {
 	list-style: none;
 }
+
 html {
 	font-family: "Manrope", sans-serif;
 	font-size: 16px;
 }
+
 body {
-	color: seagreen;
+	color: var(--Grayish-Blue);
 	text-align: center;
 }
+
 .home-logo {
+	display: inline-block;
 	font-size: 1.8rem;
-	color: seagreen;
+	color: var(--Dark-Desaturated-Blue);
+	margin: 2rem 0;
 }
+
 .home-logo:hover {
-	color: green;
+	color: hsl(15, 100%, 70%);
+}
+
+.main-cont {
+	background-color: hsl(230, 100%, 99%);
+	background-image: url("../images/pattern-circles.svg"),
+		url("../images/bg-pattern.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: top 10% left 50%, 0% 0%;
+	background-size: 200px, auto;
+	min-height: 100vh;
+	padding-bottom: 6rem;
+}
+
+.header {
+	margin-bottom: 5rem;
+}
+
+.header-main {
+	margin-bottom: 1rem;
+	color: var(--Dark-Desaturated-Blue);
+}
+
+.header-text span {
+	display: block;
+	margin-top: 0.5rem;
+}
+
+.pricing-cont {
+	width: 90%;
+	max-width: 340px;
+	background: white;
+	border-radius: 0.5rem;
+	margin: 0 auto 0 auto;
+	padding: 2rem 0;
+	box-shadow: 5px 5px 20px #e2e2e2;
+}
+
+.pageview {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+
+.pricing {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricing .pricing-bold {
+	font-weight: 800;
+	color: var(--Dark-Desaturated-Blue);
+	font-size: 2.3rem;
+	margin-right: 0.5rem;
 }
 
 .duration-toggle {
@@ -31,5 +100,57 @@ body {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	margin: 1rem 0;
+	padding: 2.5rem 0;
+	border-bottom: 1px solid hsl(224, 65%, 95%);
+}
+
+.duration-toggle p {
+	font-size: 0.75rem;
+	font-weight: 800;
+}
+
+.discount {
+	padding: 3px 10px;
+	border-radius: 20px;
+	margin-left: 5px;
+	color: hsl(15, 100%, 70%);
+	background-color: hsl(14, 92%, 95%);
+}
+
+.features {
+	margin: 2rem 0;
+}
+
+.feature {
+	font-size: 0.9rem;
+	margin: 0.5rem 0;
+}
+
+.feature-tick {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-image: url("../images/icon-check.svg");
+	background-repeat: no-repeat;
+	background-position: top 100% left 0%;
+	background-size: 70%;
+	margin-right: 0.5rem;
+}
+
+.start-trial {
+	font-family: "Manrope", sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	color: hsl(224, 65%, 95%);
+	background-color: var(--Dark-Desaturated-Blue);
+	border: none;
+	outline: none;
+	padding: 1rem 0;
+	width: 170px;
+	border-radius: 2.5rem;
+	cursor: pointer;
+}
+
+.start-trial:hover {
+	background-color: #28aea5;
 }
