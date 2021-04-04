@@ -53,4 +53,12 @@ input[type="range"]::-moz-range-thumb:hover {
 	input[type="range"] {
 		width: 460px;
 	}
+	input[type="range"]::-webkit-slider-thumb {
+		width: 45px;
+		height: 45px;
+	}
+	input[type="range"]::-moz-range-thumb {
+		width: 45px;
+		height: 45px;
+	}
 }
