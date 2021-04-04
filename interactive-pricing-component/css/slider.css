@@ -9,10 +9,11 @@ input[type="range"] {
 	);
 	border-radius: 10px;
 	height: 8px;
-	width: 280px;
+	width: 80%;
+	min-width: 280px;
 	outline: none;
 	transition: background 450ms ease-in;
-	margin: 2.5rem 0;
+	margin: 3rem auto;
 	cursor: pointer;
 	-webkit-appearance: none;
 }
@@ -50,6 +51,6 @@ input[type="range"]::-moz-range-thumb:hover {
 
 @media only screen and (min-width: 768px) {
 	input[type="range"] {
-		width: 280px;
+		width: 460px;
 	}
 }

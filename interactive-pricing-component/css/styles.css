@@ -30,7 +30,7 @@ body {
 
 .home-logo {
 	display: inline-block;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	color: var(--Dark-Desaturated-Blue);
 	margin: 2rem 0;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .header {
-	margin-bottom: 5rem;
+	margin-bottom: 5.5rem;
 }
 
 .header-main {
@@ -66,10 +66,10 @@ body {
 
 .pricing-cont {
 	width: 90%;
-	max-width: 340px;
+	max-width: 500px;
 	background: white;
 	border-radius: 0.5rem;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 	padding: 2rem 0;
 	box-shadow: 5px 5px 20px #e2e2e2;
 }
@@ -112,9 +112,13 @@ body {
 .discount {
 	padding: 3px 10px;
 	border-radius: 20px;
-	margin-left: 5px;
+	margin-left: 1rem;
 	color: hsl(15, 100%, 70%);
 	background-color: hsl(14, 92%, 95%);
+}
+
+.discount-hide {
+	display: none;
 }
 
 .features {
@@ -153,4 +157,63 @@ body {
 
 .start-trial:hover {
 	background-color: #28aea5;
+}
+
+@media only screen and (min-width: 768px) {
+	.header-text span {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.main-cont {
+		background-size: 150px, 100% 450px;
+	}
+
+	.pricing-cont {
+		width: 100%;
+		max-width: 550px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3rem 2.5rem 0.2rem 2.5rem;
+		text-align: left;
+	}
+
+	.pageview {
+		order: 1;
+		width: 50%;
+	}
+
+	.pricing {
+		order: 2;
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.range-cont {
+		order: 3;
+		width: 100%;
+		text-align: center;
+	}
+
+	.duration-toggle {
+		order: 4;
+		width: 100%;
+		padding: 0.5rem 0 2.5rem 0;
+	}
+
+	.discount-hide {
+		display: inline-block;
+	}
+
+	.features {
+		order: 5;
+		width: 50%;
+	}
+
+	.start-trial {
+		order: 6;
+	}
 }
