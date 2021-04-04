@@ -129,3 +129,35 @@ body {
 	);
 	color: white;
 }
+
+@media only screen and (min-width: 768px) {
+	body {
+		min-height: 100vh;
+		background-position: top right, bottom left;
+		background-size: auto, auto;
+	}
+
+	.main-container {
+		width: 100%;
+		max-width: 1050px;
+	}
+
+	.home-logo {
+		font-size: 2.4rem;
+	}
+
+	.plans-container {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.plan {
+		width: 32.5%;
+	}
+
+	.active {
+		transform: scale(1.1);
+	}
+}
