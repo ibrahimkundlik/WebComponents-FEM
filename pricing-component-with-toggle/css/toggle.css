@@ -1,15 +1,19 @@
-input[type="checkbox"] {
+#duration {
 	display: none;
 }
 
 .duration-label {
 	cursor: pointer;
-	margin: 0 1rem;
-	padding: 3px 22px;
-	background: hsl(223, 50%, 87%);
+	margin: 0 1.5rem;
+	padding: 5px 27px;
+	background: linear-gradient(
+		45deg,
+		hsl(236, 72%, 79%) 0%,
+		hsl(237, 63%, 64%) 100%
+	);
 	border-radius: 40px;
 	position: relative;
-	transition: background 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	user-select: none;
 }
 
@@ -20,15 +24,19 @@ input[type="checkbox"] {
 	border-radius: 50%;
 	background: white;
 	position: absolute;
-	top: 11%;
+	top: 12%;
 	left: 6%;
 	transition: left 0.3s ease-in-out;
 }
 
-input[type="checkbox"]:checked + .duration-label::before {
-	left: 43%;
+#duration:checked + .duration-label::before {
+	left: 54%;
 }
 
-input[type="checkbox"]:checked + .duration-label {
-	background: hsl(174, 86%, 45%);
+#duration:checked + .duration-label {
+	background: linear-gradient(
+		0deg,
+		hsl(234, 14%, 74%) 100%,
+		hsl(234, 14%, 74%) 100%
+	);
 }
