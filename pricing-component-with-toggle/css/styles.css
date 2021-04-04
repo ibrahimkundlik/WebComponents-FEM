@@ -116,9 +116,13 @@ body {
 	cursor: pointer;
 }
 
-.learn-more-btn:hover {
+article:nth-child(2) > .learn-more-btn {
 	background: white;
 	color: hsl(237, 63%, 64%);
+}
+
+article:nth-child(2) > .pricing {
+	color: white;
 }
 
 .active {
