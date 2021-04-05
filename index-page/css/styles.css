@@ -1,6 +1,70 @@
-body {
+:root {
+	--primary-bg: #fafafa;
+	--primary-text: #0e1d33;
+	--head-text: #3e54a3;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	font-weight: 600;
+}
+
+body {
+	background: var(--primary-bg);
+	color: var(--primary-text);
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-text);
+	-webkit-tap-highlight-color: transparent;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.logo-cont {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.header {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 2rem;
+}
+
+.projects-cont {
+	text-align: center;
+}
+
+.project-list {
+	width: 100%;
+	text-align: center;
+}
+
+.project-img {
+	width: 350px;
+	min-height: 200px;
+	background-color: blueviolet;
+	display: grid;
+	place-items: center;
+	text-align: center;
+	margin: 1rem auto;
 }
