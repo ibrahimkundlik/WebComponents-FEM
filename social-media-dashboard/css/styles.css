@@ -45,7 +45,7 @@ body {
 .main-container {
 	padding: 2.5rem 2rem 4rem 2rem;
 	margin: 0 auto;
-	max-width: 600px;
+	max-width: 650px;
 }
 
 .main-container:before {
@@ -62,12 +62,12 @@ body {
 .home-icon {
 	display: block;
 	width: 30px;
-	color: var(--secondary-text);
+	color: hsl(163, 72%, 41%);
 	margin: 0 auto;
 }
 
 .home-icon:hover {
-	color: var(--primary-text);
+	color: hsl(356, 69%, 56%);
 }
 
 .header-text {
@@ -206,11 +206,89 @@ body {
 }
 
 .social-today > p:nth-child(1) {
-	width: 60%;
+	width: 70%;
+}
+
+.social-today > .count-inc,
+.social-today > .count-dec {
+	padding-bottom: 5px;
 }
 
 .todays-count {
-	width: 60%;
+	width: 50%;
 	font-size: 2rem;
 	margin-top: 2rem;
+}
+
+@media only screen and (min-width: 480px) {
+	.stats-overall,
+	.stats-today {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.social-overall,
+	.social-today {
+		width: 48%;
+	}
+
+	.stats-today-header {
+		width: 100%;
+		margin-top: 1rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.main-container {
+		width: 100%;
+		max-width: 1170px;
+	}
+
+	.header {
+		display: grid;
+		justify-content: space-between;
+		margin: 0.5rem 0 3rem 0;
+		grid-template-areas:
+			"headerText themeCont homeIcon"
+			"totalFollowers themeCont homeIcon";
+	}
+
+	.home-icon {
+		grid-area: homeIcon;
+		display: grid;
+		place-items: center;
+	}
+	.header-text {
+		grid-area: headerText;
+		margin: 0;
+	}
+	.total-followers {
+		grid-area: totalFollowers;
+	}
+	.theme-cont {
+		grid-area: themeCont;
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+
+	.social-overall {
+		width: 24%;
+	}
+
+	.social-today {
+		width: 32%;
+	}
+
+	.tabs-exp {
+		width: 49%;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.social-today {
+		width: 24%;
+	}
 }
