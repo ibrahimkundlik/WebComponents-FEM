@@ -20,23 +20,38 @@
 	</head>
 	<body>
 		<div class="main-container">
-			<header>
-				<h1 class="header-text">Social Media Dashboard</h1>
-				<p class="followers">Total Followers: 23,004</p>
-				<div class="home-icon">
-					<img src="./images/home-solid.svg" alt="home icon" />
-				</div>
+			<header class="header">
+				<a href="../index.html" class="home-icon">
+					<svg
+						aria-hidden="true"
+						focusable="false"
+						data-prefix="fas"
+						data-icon="home"
+						class="svg-inline--fa fa-home fa-w-18"
+						role="img"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 576 512"
+					>
+						<path
+							fill="currentColor"
+							d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+						></path>
+					</svg>
+				</a>
+				<h1 class="header-text theme-text">Social Media Dashboard</h1>
+				<p class="total-followers">Total Followers: 23,004</p>
 				<div class="theme-cont">
-					<p class="theme">Dark Mode</p>
+					<p>Dark</p>
 					<div class="checkbox-cont">
 						<input type="checkbox" name="duration" id="duration" />
 						<label for="duration" class="duration-label"></label>
 					</div>
+					<p>Light</p>
 				</div>
 			</header>
 
 			<div class="stats-overall">
-				<article class="social-overall">
+				<article class="social-overall facebook-br">
 					<img
 						src="./images/icon-facebook.svg"
 						alt="icon-facebook"
@@ -47,7 +62,7 @@
 					<p class="followers">Followers</p>
 					<p class="count-inc">12 Today</p>
 				</article>
-				<article class="social-overall">
+				<article class="social-overall twitter-br">
 					<img
 						src="./images/icon-twitter.svg"
 						alt="icon-twitter"
@@ -58,7 +73,7 @@
 					<p class="followers">Followers</p>
 					<p class="count-inc">99 Today</p>
 				</article>
-				<article class="social-overall">
+				<article class="social-overall instagram-br">
 					<img
 						src="./images/icon-instagram.svg"
 						alt="icon-instagram"
@@ -69,7 +84,7 @@
 					<p class="followers">Followers</p>
 					<p class="count-inc">1099 Today</p>
 				</article>
-				<article class="social-overall">
+				<article class="social-overall youtube-br">
 					<img
 						src="./images/icon-youtube.svg"
 						alt="icon-youtube"
@@ -83,7 +98,7 @@
 			</div>
 
 			<div class="stats-today">
-				<h2 class="stats-today-header">Overview - Today</h2>
+				<h2 class="stats-today-header theme-text">Overview - Today</h2>
 				<article class="social-today">
 					<p>Page Views</p>
 					<img
