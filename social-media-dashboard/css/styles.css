@@ -5,20 +5,11 @@
 }
 
 :root {
-	/* Light */
-	/* DARK */
-
-	/* hsl(0, 0%, 100%) */
 	--bg-color: hsl(230, 17%, 14%);
-	/* hsl(225, 100%, 98%) */
 	--bg-top-color: hsl(232, 19%, 15%);
-	/* hsl(227, 47%, 96%) */
 	--bg-card: hsl(228, 28%, 20%);
-	/* Pending */
 	--bg-card-hover: hsl(228, 26%, 27%);
-	/* hsl(230, 17%, 14%) */
 	--primary-text: hsl(0, 0%, 100%);
-	/* hsl(228, 12%, 44%) */
 	--secondary-text: hsl(228, 34%, 66%);
 }
 
