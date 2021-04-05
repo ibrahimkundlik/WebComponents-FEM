@@ -1,87 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Social Media Dashboard | FEM</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/toggle.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="main-container">
+			<header>
+				<h1 class="header-text">Social Media Dashboard</h1>
+				<p class="followers">Total Followers: 23,004</p>
+				<div class="home-icon">
+					<img src="./images/home-solid.svg" alt="home icon" />
+				</div>
+				<div class="theme-cont">
+					<p class="theme">Dark Mode</p>
+					<div class="checkbox-cont">
+						<input type="checkbox" name="duration" id="duration" />
+						<label for="duration" class="duration-label"></label>
+					</div>
+				</div>
+			</header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+			<div class="stats-overall">
+				<article class="social-overall">
+					<img
+						src="./images/icon-facebook.svg"
+						alt="icon-facebook"
+						class="social-icon"
+					/>
+					<p class="username">@nathanf</p>
+					<h1 class="social-count theme-text">1987</h1>
+					<p class="followers">Followers</p>
+					<p class="count-inc">12 Today</p>
+				</article>
+				<article class="social-overall">
+					<img
+						src="./images/icon-twitter.svg"
+						alt="icon-twitter"
+						class="social-icon"
+					/>
+					<p class="username">@nathanf</p>
+					<h1 class="social-count theme-text">1044</h1>
+					<p class="followers">Followers</p>
+					<p class="count-inc">99 Today</p>
+				</article>
+				<article class="social-overall">
+					<img
+						src="./images/icon-instagram.svg"
+						alt="icon-instagram"
+						class="social-icon"
+					/>
+					<p class="username">@realnathanf</p>
+					<h1 class="social-count theme-text">11k</h1>
+					<p class="followers">Followers</p>
+					<p class="count-inc">1099 Today</p>
+				</article>
+				<article class="social-overall">
+					<img
+						src="./images/icon-youtube.svg"
+						alt="icon-youtube"
+						class="social-icon"
+					/>
+					<p class="username">Nathan F.</p>
+					<h1 class="social-count theme-text">8239</h1>
+					<p class="followers">Subscribers</p>
+					<p class="count-dec">144 Today</p>
+				</article>
+			</div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+			<div class="stats-today">
+				<h2 class="stats-today-header">Overview - Today</h2>
+				<article class="social-today">
+					<p>Page Views</p>
+					<img
+						src="./images/icon-facebook.svg"
+						alt="icon-facebook"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">87</h3>
+					<p class="count-inc">3%</p>
+				</article>
+				<article class="social-today">
+					<p>Likes</p>
+					<img
+						src="./images/icon-facebook.svg"
+						alt="icon-facebook"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">52</h3>
+					<p class="count-dec">2%</p>
+				</article>
+				<article class="social-today">
+					<p>Likes</p>
+					<img
+						src="./images/icon-instagram.svg"
+						alt="icon-instagram"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">5462</h3>
+					<p class="count-inc">2257%</p>
+				</article>
+				<article class="social-today">
+					<p>Profile Views</p>
+					<img
+						src="./images/icon-instagram.svg"
+						alt="icon-instagram"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">52k</h3>
+					<p class="count-inc">1375%</p>
+				</article>
+				<article class="social-today">
+					<p>Retweets</p>
+					<img
+						src="./images/icon-twitter.svg"
+						alt="icon-twitter"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">117</h3>
+					<p class="count-inc">303%</p>
+				</article>
+				<article class="social-today">
+					<p>Likes</p>
+					<img
+						src="./images/icon-twitter.svg"
+						alt="icon-twitter"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">507</h3>
+					<p class="count-inc">553%</p>
+				</article>
+				<article class="social-today">
+					<p>Likes</p>
+					<img
+						src="./images/icon-youtube.svg"
+						alt="icon-youtube"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">107</h3>
+					<p class="count-dec">19%</p>
+				</article>
+				<article class="social-today">
+					<p>Total Views</p>
+					<img
+						src="./images/icon-youtube.svg"
+						alt="icon-youtube"
+						class="social-icon"
+					/>
+					<h3 class="todays-count theme-text">1407</h3>
+					<p class="count-dec">12%</p>
+				</article>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
