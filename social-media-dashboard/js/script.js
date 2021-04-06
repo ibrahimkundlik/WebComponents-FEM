@@ -42,10 +42,10 @@ selectTheme.addEventListener("change", (e) => handleChange(e.target.checked));
 
 document.addEventListener("DOMContentLoaded", () => {
 	const theme = localStorage.getItem("theme");
-	if (theme === "light") {
+	if (theme === "dark") {
+		selectTheme.checked = false;
+	} else {
 		selectTheme.checked = true;
 		handleChange(true);
-	} else {
-		selectTheme.checked = false;
 	}
 });
