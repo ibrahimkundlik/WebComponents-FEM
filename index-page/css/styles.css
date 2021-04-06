@@ -11,6 +11,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -47,6 +48,7 @@ img {
 .main-container {
 	width: 90%;
 	margin: var(--m-spacing) auto;
+	max-width: 1650px;
 }
 
 .logo-cont {
@@ -56,17 +58,41 @@ img {
 	margin-right: 0.5rem;
 }
 
+.attribution {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin: var(--s-spacing) 0;
+}
+
+.attribution > p {
+	margin: var(--s-spacing) 0;
+	width: 100%;
+}
+
+.attribution span {
+	display: block;
+	font-weight: 400;
+}
+
+.attribution a {
+	color: var(--head-text);
+	text-decoration: underline;
+}
+
 .header {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: center;
 }
 
 .projects-cont {
 	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
-	margin: var(--m-spacing) 0;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 5rem;
 }
 
 .loading {
@@ -75,9 +101,10 @@ img {
 }
 
 .project {
-	margin-bottom: var(--l-spacing);
+	margin: 0 auto var(--l-spacing) auto;
 	border: var(--border);
 	width: 100%;
+	max-width: 380px;
 }
 
 .project-img {
@@ -119,4 +146,66 @@ img {
 
 .project-name {
 	padding: 0 1rem 1.2rem 1rem;
+}
+
+.back-top {
+	display: inline-block;
+	background-color: var(--head-text);
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.back-top::before {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	width: 26px;
+	height: 26px;
+	border-bottom: 13px solid #fff;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	margin: 5px 0 0 12px;
+}
+
+@media screen and (min-width: 600px) {
+	.project {
+		width: 48%;
+		margin: 0 0 var(--l-spacing) 0;
+	}
+
+	.attribution span {
+		display: inline-block;
+	}
+
+	.header {
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.project {
+		width: 32%;
+	}
+
+	.project:nth-last-child(1) {
+		transform: translateX(-106%);
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.project:nth-last-child(1) {
+		transform: translateX(0%);
+	}
+
+	.project {
+		width: 24%;
+	}
 }

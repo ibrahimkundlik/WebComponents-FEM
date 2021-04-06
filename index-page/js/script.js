@@ -1,5 +1,14 @@
 import projectList from "./projectList.js";
 const projectCont = document.querySelector(".projects-cont");
+var backToTop = document.querySelector(".back-top");
+
+backToTop.addEventListener("click", (e) => {
+	e.preventDefault();
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth",
+	});
+});
 
 const displayProjects = () => {
 	let projHTML = "";

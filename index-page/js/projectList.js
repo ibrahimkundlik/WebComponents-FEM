@@ -16,19 +16,11 @@ const projectList = [
 		},
 	},
 	{
-		name: "pricing-component-with-toggle",
+		name: "testimonials-grid-section",
 		language: {
 			html: true,
 			css: true,
-			js: true,
-		},
-	},
-	{
-		name: "article-preview-component",
-		language: {
-			html: true,
-			css: true,
-			js: true,
+			js: false,
 		},
 	},
 	{
@@ -40,7 +32,31 @@ const projectList = [
 		},
 	},
 	{
+		name: "pricing-component-with-toggle",
+		language: {
+			html: true,
+			css: true,
+			js: true,
+		},
+	},
+	{
+		name: "intro-component-with-signup-form",
+		language: {
+			html: true,
+			css: true,
+			js: true,
+		},
+	},
+	{
 		name: "coding-bootcamp-testimonials-slider",
+		language: {
+			html: true,
+			css: true,
+			js: true,
+		},
+	},
+	{
+		name: "project-tracking-intro-component",
 		language: {
 			html: true,
 			css: true,
@@ -80,14 +96,6 @@ const projectList = [
 		},
 	},
 	{
-		name: "intro-component-with-signup-form",
-		language: {
-			html: true,
-			css: true,
-			js: true,
-		},
-	},
-	{
 		name: "ping-coming-soon-page",
 		language: {
 			html: true,
@@ -101,14 +109,6 @@ const projectList = [
 			html: true,
 			css: true,
 			js: false,
-		},
-	},
-	{
-		name: "project-tracking-intro-component",
-		language: {
-			html: true,
-			css: true,
-			js: true,
 		},
 	},
 	{
@@ -128,11 +128,11 @@ const projectList = [
 		},
 	},
 	{
-		name: "testimonials-grid-section",
+		name: "article-preview-component",
 		language: {
 			html: true,
 			css: true,
-			js: false,
+			js: true,
 		},
 	},
 ];
