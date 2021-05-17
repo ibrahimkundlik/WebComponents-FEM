@@ -120,6 +120,14 @@ const projectList = [
 		},
 	},
 	{
+		name: "stats-preview-card-component",
+		language: {
+			html: true,
+			css: true,
+			js: false,
+		},
+	},
+	{
 		name: "social-proof-section",
 		language: {
 			html: true,

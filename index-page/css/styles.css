@@ -5,7 +5,7 @@
 	--s-spacing: 1rem;
 	--m-spacing: 2rem;
 	--l-spacing: 3rem;
-	--border: 1px solid #b2cfd3;
+	--border: 2px solid #b2cfd3;
 }
 
 * {
@@ -90,7 +90,6 @@ img {
 .projects-cont {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
 	align-items: stretch;
 	margin-bottom: 5rem;
 }
@@ -101,10 +100,10 @@ img {
 }
 
 .project {
-	margin: 0 auto var(--l-spacing) auto;
 	border: var(--border);
 	width: 100%;
 	max-width: 380px;
+	margin: 3% auto;
 }
 
 .project-img {
@@ -178,7 +177,7 @@ img {
 @media screen and (min-width: 600px) {
 	.project {
 		width: 48%;
-		margin: 0 0 var(--l-spacing) 0;
+		margin: 1%;
 	}
 
 	.attribution span {
@@ -192,20 +191,12 @@ img {
 
 @media screen and (min-width: 900px) {
 	.project {
-		width: 32%;
-	}
-
-	.project:nth-last-child(1) {
-		transform: translateX(-106%);
+		width: 31%;
 	}
 }
 
 @media screen and (min-width: 1300px) {
-	.project:nth-last-child(1) {
-		transform: translateX(0%);
-	}
-
 	.project {
-		width: 24%;
+		width: 23%;
 	}
 }
