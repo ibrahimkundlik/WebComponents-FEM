@@ -16,7 +16,125 @@
 
 html,
 button {
-	/* font-family: "Big Shoulders Display", cursive; */
 	font-family: "Lexend Deca", sans-serif;
 	font-size: 15px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+.main-cont {
+	width: 100vw;
+	min-height: 100vh;
+	background: var(--gray-bg);
+	padding: 1px 1.5rem 4rem 1.5rem;
+	color: var(--white-para);
+}
+
+.home-logo-cont {
+	margin: 2.5rem auto;
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.home-logo {
+	color: var(--dark-cyan);
+}
+
+.home-logo:hover {
+	color: var(--cyan);
+}
+
+.card-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+.card:nth-child(1) {
+	background: var(--orange);
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.card:nth-child(1) .card-btn {
+	color: var(--orange);
+}
+.card:nth-child(2) {
+	background: var(--cyan);
+}
+.card:nth-child(2) .card-btn {
+	color: var(--cyan);
+}
+.card:nth-child(3) {
+	background: var(--dark-cyan);
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+.card:nth-child(3) .card-btn {
+	color: var(--dark-cyan);
+}
+
+.card {
+	width: 100%;
+	padding: 3rem;
+}
+
+.card-heading {
+	font-family: "Big Shoulders Display", sans-serif;
+	margin: 2.5rem 0;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	color: var(--gray-bg);
+}
+
+.card-para {
+	margin-bottom: 2rem;
+	line-height: 1.6;
+}
+
+.card-btn {
+	padding: 0.8rem 2rem;
+	border-radius: 2rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: var(--gray-bg);
+	border: 2px solid var(--gray-bg);
+	transition: background 0.3s ease-in-out;
+}
+
+.card .card-btn:hover {
+	background: transparent;
+	color: var(--gray-bg);
+}
+
+@media only screen and (min-width: 768px) {
+	.card-list {
+		flex-flow: row nowrap;
+		align-items: stretch;
+		width: 100%;
+		max-width: 918px;
+		margin: 0 auto;
+	}
+
+	.card {
+		width: 33.3%;
+	}
+
+	.card:nth-child(1) {
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+	.card:nth-child(3) {
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.card-para {
+		margin-bottom: 5rem;
+	}
 }
