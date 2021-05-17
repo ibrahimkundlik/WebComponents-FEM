@@ -47,10 +47,9 @@ body {
 	height: 100vh;
 }
 .home-logo {
-	width: 100%;
 	font-size: 2.5rem;
 	text-align: center;
-	margin: 3rem 0 11rem 0;
+	margin: 3rem auto 11rem auto;
 }
 .arrow-img {
 	width: 14px;
@@ -123,7 +122,7 @@ body {
 		max-width: 810px;
 	}
 	.home-logo {
-		margin: 3rem 0;
+		margin: 3rem auto;
 	}
 	.img-cont {
 		flex-basis: 50%;
