@@ -11,20 +11,19 @@
 	--dark-desat-blue: hsl(244, 38%, 16%);
 	--violet: hsl(277, 64%, 61%);
 	--white: hsl(0, 0%, 100%);
-	--white-para: hsla(0, 0%, 100%, 0.75);
-	--white-head: hsla(0, 0%, 100%, 0.6);
+	--white-head: hsla(0, 0%, 100%, 0.75);
+	--white-para: hsla(0, 0%, 100%, 0.6);
 }
 
 html,
 button {
-	/* font-family: 'Inter', sans-serif; */
 	font-family: "Lexend Deca", sans-serif;
 	font-size: 15px;
 }
 
 body {
 	overflow-x: hidden;
-	color: var(--white);
+	color: var(--white-para);
 }
 
 li {
@@ -49,5 +48,125 @@ li {
 	width: 100vw;
 	min-height: 100vh;
 	background: var(--dark-blue);
-	padding-top: 1px;
+	padding: 1px 1.5rem 4rem 1.5rem;
+}
+
+.main-section {
+	background: var(--dark-desat-blue);
+	border-radius: 0.5rem;
+	max-width: 360px;
+	margin: 0 auto;
+}
+
+.section-img {
+	width: 100%;
+	height: 240px;
+	background-image: url("../images/image-header-mobile.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 0.5rem 0.5rem 0 0;
+	position: relative;
+}
+
+.section-img::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--violet);
+	border-radius: 0.5rem 0.5rem 0 0;
+	opacity: 0.6;
+}
+
+.section-text {
+	padding: 3rem 2rem 0.5rem 2rem;
+	text-align: center;
+}
+
+.section-head {
+	font-family: "Inter", sans-serif;
+	color: var(--white);
+	font-size: 1.9rem;
+	max-width: 270px;
+	margin: 0 auto;
+}
+
+.section-head > span {
+	color: var(--violet);
+}
+
+.section-para {
+	margin: 1rem auto 2.5rem auto;
+	line-height: 1.8;
+	max-width: 270px;
+}
+
+.stats-list {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.stat {
+	width: 100%;
+	margin-bottom: 2rem;
+}
+
+.stat-num {
+	font-family: "Inter", sans-serif;
+	color: var(--white);
+	margin-bottom: 0.4rem;
+}
+
+.stat-desc {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.main-section {
+		width: 100%;
+		max-width: 1110px;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+	}
+
+	.section-img {
+		background-image: url("../images/image-header-desktop.jpg");
+		width: 50%;
+		height: 450px;
+		order: 2;
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.section-img::after {
+		border-radius: 0 0.5rem 0.5rem 0;
+	}
+
+	.section-text {
+		width: 50%;
+		max-width: 390px;
+		padding: 0 1rem;
+		margin: 0 auto;
+		text-align: left;
+		order: 1;
+	}
+
+	.section-head {
+		max-width: unset;
+		font-size: 2.1rem;
+	}
+
+	.section-para {
+		max-width: unset;
+		margin: 2rem auto 5rem auto;
+	}
+
+	.stats-list {
+		flex-flow: row nowrap;
+	}
 }
