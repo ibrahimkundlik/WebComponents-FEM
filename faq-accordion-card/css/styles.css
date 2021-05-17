@@ -44,7 +44,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 100vh;
+	min-height: 100vh;
 }
 .home-logo {
 	font-size: 2.5rem;
@@ -75,7 +75,7 @@ body {
 	border-radius: 20px;
 	width: 85%;
 	max-width: 450px;
-	margin: 0 auto 3rem auto;
+	margin: 0 auto 5rem auto;
 }
 .faq-cont {
 	padding: 2rem 1.5rem 4rem 1.5rem;
@@ -87,6 +87,7 @@ body {
 }
 .question {
 	color: var(--Very-dark-desaturated-blue);
+	font-size: 1.2rem;
 }
 .question:hover {
 	color: var(--Soft-red);
@@ -95,6 +96,7 @@ body {
 	color: var(--Very-dark-desaturated-blue);
 	font-weight: 400;
 	padding-top: 1.2rem;
+	line-height: 1.5;
 }
 .hidden {
 	display: none;
