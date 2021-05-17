@@ -1,0 +1,22 @@
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--dark-cyan: hsl(179, 100%, 13%);
+	--white-para: hsla(0, 0%, 100%, 0.75);
+	--gray-bg: hsl(0, 0%, 95%);
+}
+
+html,
+button {
+	/* font-family: "Big Shoulders Display", cursive; */
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 15px;
+}
