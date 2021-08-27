@@ -5,6 +5,12 @@
 </p>
 <p align="center"><i>Desktop Preview</i></p>
 
+## Acknowledgments
+
+Thank you to the entire Frontend Mentor team for providing such amazing frontend projects to work on.
+
+UI Design credits - [Frontend Mentor](https://www.frontendmentor.io/challenges)
+
 ## Description
 
 This project is a collection of components and sections which are very much frequently used for building websites.
@@ -35,9 +41,3 @@ All the components/sections present in this project are fully responsive on all 
 - **CSS** Flexbox + **CSS** Grid
 - Mobile-first workflow
 - Vanilla **Javascript**
-
-## Acknowledgments
-
-Thank you to the entire Frontend Mentor team for providing such amazing frontend projects to work on.
-
-UI Design credits - [Frontend Mentor](https://www.frontendmentor.io/challenges)
