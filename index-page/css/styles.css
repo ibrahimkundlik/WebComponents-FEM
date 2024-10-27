@@ -5,7 +5,7 @@
 	--s-spacing: 1rem;
 	--m-spacing: 2rem;
 	--l-spacing: 3rem;
-	--border: 2px solid #b2cfd3;
+	--border: 2px solid #2fb2c3;
 }
 
 * {
@@ -61,17 +61,18 @@ img {
 	text-align: center;
 	display: inline-block;
 	width: 100%;
-	margin: var(--s-spacing) 0;
+	margin: var(--m-spacing) 0;
 }
 
 .attribution > p {
 	margin: var(--s-spacing) 0;
 	width: 100%;
+	font-weight: 500;
 }
 
 .attribution span {
 	display: block;
-	font-weight: 400;
+	color: var(--primary-text);
 }
 
 .attribution a {

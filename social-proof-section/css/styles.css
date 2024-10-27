@@ -82,6 +82,8 @@ img {
 	max-width: 450px;
 }
 .profile-img {
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 }
 .profile-info {
@@ -93,6 +95,10 @@ img {
 .review {
 	margin-top: 2rem;
 	line-height: 1.8;
+}
+.profile-name {
+	font-size: 14px;
+	font-weight: 600;
 }
 .profile-type {
 	color: var(--soft-pink);
